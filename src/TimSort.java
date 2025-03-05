@@ -1,14 +1,7 @@
 import java.util.List;
 
 public class TimSort extends SortingAlgorithms {
-    // private MergeSort mergeSort;
-    // private InsertionSort insertionSort;
     final static int RUN = 32;
-
-    // public TimSort(){
-    //     this.mergeSort = new MergeSort();
-    //     this.insertionSort = new InsertionSort();
-    // }
 
     private void timSort(List<Integer> arr, int size){
         for(int i = 0; i < size; i += RUN){

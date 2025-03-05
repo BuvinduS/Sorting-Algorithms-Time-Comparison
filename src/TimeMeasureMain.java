@@ -8,6 +8,10 @@ public class TimeMeasureMain {
     private static List<Integer> createArray(Scanner scanner, Random random){
         System.out.print("Enter array length: ");
         int limit = scanner.nextInt();
+        if(limit <= 0){
+            System.err.println("Error: please enter a valid value");
+            System.exit(1);
+        }
         List<Integer> arr = new ArrayList<>();
 
         for(int i = 0; i < limit; i++){
@@ -51,6 +55,11 @@ public class TimeMeasureMain {
             algo1.printArray(arrFor1);
         }
         scanner.nextLine();
+        if (firstChoiceTime < secondChoiceTime){
+            System.out.println(algo1.getClass().getSimpleName() + " was faster than "+algo2.getClass().getSimpleName()+" for an input size of "+arrFor1.size());
+        }else{
+            System.out.println(algo2.getClass().getSimpleName() + " was faster than "+algo1.getClass().getSimpleName()+" for an input size of "+arrFor1.size());
+        }
     }
     
     public static void main(String[] args) {
