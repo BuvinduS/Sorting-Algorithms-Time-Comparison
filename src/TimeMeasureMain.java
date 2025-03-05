@@ -63,6 +63,8 @@ public class TimeMeasureMain {
         algorithms.add(new MergeSort());
         algorithms.add(new SelectionSort());
         algorithms.add(new BubbleSort());
+        algorithms.add(new InsertionSort());
+        algorithms.add(new TimSort());
 
         output(algorithms, arrForSorting, scanner);
 

@@ -38,6 +38,12 @@ public class MergeSort extends SortingAlgorithms {
             merge(arr, left, mid, right);
         }
     }
+
+    public static void mergeSortWrapper(List<Integer> arr, int left, int right){
+        int mid = (right+left)/2;
+        merge(arr, left, mid, right);
+    }
+
     @Override
     public void sort(List<Integer> arr) {
         mergeSort(arr, 0, arr.size()-1);
