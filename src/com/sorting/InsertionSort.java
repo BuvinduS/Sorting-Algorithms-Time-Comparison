@@ -1,3 +1,4 @@
+package com.sorting;
 import java.util.List;
 public class InsertionSort extends SortingAlgorithms{
     public static void insertionSort(List<Integer> arr, int left, int right){
