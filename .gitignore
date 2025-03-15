@@ -1,0 +1,7 @@
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/

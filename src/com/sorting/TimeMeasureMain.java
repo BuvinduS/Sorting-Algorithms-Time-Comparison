@@ -34,7 +34,7 @@ public class TimeMeasureMain {
         List<Integer> arrFor1 = new ArrayList<>(arr);
         List<Integer> arrFor2 = new ArrayList<>(arr);
 
-        SortingAlgorithms algo1 = algorithms.get(firstChoice);;
+        SortingAlgorithms algo1 = algorithms.get(firstChoice);
         SortingAlgorithms algo2 = algorithms.get(secondChoice);
         System.out.println("Print unsorted array? (Enter 1 if yes, other if no)");
         if(scanner.nextInt() == 1){
@@ -75,6 +75,7 @@ public class TimeMeasureMain {
         algorithms.add(new BubbleSort());
         algorithms.add(new InsertionSort());
         algorithms.add(new TimSort());
+        algorithms.add(new HeapSort());
 
         output(algorithms, arrForSorting, scanner);
 

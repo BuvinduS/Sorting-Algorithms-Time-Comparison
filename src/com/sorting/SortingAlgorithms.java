@@ -7,6 +7,7 @@ public abstract class SortingAlgorithms {
     It includes methods for:
           sorting the array: sort(int[] arr);
           measuring time: measureTime(int[] arr);
+          printing the array: printArray(int[] arr);
     */
     
     public abstract void sort(List<Integer> arr);
